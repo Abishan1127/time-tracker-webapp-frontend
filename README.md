@@ -49,5 +49,5 @@ A full-stack web application for tracking employee work shifts, breaks, and loca
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/employee-shift-tracker.git
+git clone git@github.com:Abishan1127/time-tracker-webapp-frontend.git
 cd employee-shift-tracker
