@@ -7,14 +7,14 @@ const HomePage = () => {
   const { isAuthenticated } = useContext(AuthContext);
   const { theme, toggleTheme } = useContext(ThemeContext);
   const navigate = useNavigate();
-  
+
   // If already authenticated, redirect to dashboard
   useEffect(() => {
     if (isAuthenticated) {
       navigate('/dashboard');
     }
   }, [isAuthenticated, navigate]);
-  
+
   // Features list
   const features = [
     {
@@ -54,7 +54,7 @@ const HomePage = () => {
       )
     },
   ];
-  
+
   return (
     <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900">
       <header className="bg-white dark:bg-gray-800 shadow-md">
@@ -62,7 +62,7 @@ const HomePage = () => {
           <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">
             ShiftTracker
           </div>
-          
+
           <div className="flex items-center space-x-4">
             <button
               onClick={toggleTheme}
@@ -79,7 +79,7 @@ const HomePage = () => {
                 </svg>
               )}
             </button>
-            
+
             <div className="space-x-2">
               <Link to="/login" className="btn btn-primary">
                 Login
@@ -91,36 +91,37 @@ const HomePage = () => {
           </div>
         </div>
       </header>
-      
+
       <main className="flex-grow">
         {/* Hero section */}
-        <section className="py-12 md:py-20 bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-900 dark:to-primary-700 text-white">
+        <section className="py-12 md:py-20 bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-900 dark:to-primary-700 text-black">
           <div className="container mx-auto px-4 text-center">
             <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
               Track Your Work Hours Effortlessly
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-              ShiftTracker helps you easily record your working hours, breaks, and locations. 
+              ShiftTracker helps you easily record your working hours, breaks, and locations.
               Perfect for remote workers, freelancers, and employees on the go.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link to="/register" className="btn bg-white text-primary-700 hover:bg-gray-100 focus:ring-white text-lg px-8 py-3">
+              <Link to="/register" className="btn bg-white text-black hover:bg-gray-100 focus:ring-black text-lg px-8 py-3">
                 Get Started
               </Link>
-              <Link to="/login" className="btn bg-transparent border-2 border-white text-white hover:bg-white/10 focus:ring-white text-lg px-8 py-3">
+              <Link to="/login" className="btn bg-transparent border-2 border-black text-black hover:bg-black/10 focus:ring-black text-lg px-8 py-3">
                 Sign In
               </Link>
             </div>
           </div>
         </section>
-        
+
+
         {/* Features section */}
         <section className="py-16 bg-white dark:bg-gray-800">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
               Features
             </h2>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {features.map((feature, index) => (
                 <div key={index} className="p-6 bg-gray-50 dark:bg-gray-700 rounded-lg text-center">
@@ -138,7 +139,7 @@ const HomePage = () => {
             </div>
           </div>
         </section>
-        
+
         {/* CTA section */}
         <section className="py-16 bg-gray-100 dark:bg-gray-900">
           <div className="container mx-auto px-4 text-center">
@@ -154,21 +155,21 @@ const HomePage = () => {
           </div>
         </section>
       </main>
-      
+
       <footer className="bg-white dark:bg-gray-800 shadow-md mt-auto">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-xl font-bold text-primary-600 dark:text-primary-400 mb-4 md:mb-0">
               ShiftTracker
             </div>
-            
+
             <div className="flex flex-wrap justify-center space-x-4 text-gray-500 dark:text-gray-400 text-sm">
               <a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 mb-2">Privacy Policy</a>
               <a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 mb-2">Terms of Service</a>
               <a href="#" className="hover:text-primary-600 dark:hover:text-primary-400 mb-2">Contact Us</a>
             </div>
           </div>
-          
+
           <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
             <p className="text-center text-gray-500 dark:text-gray-400 text-sm">
               &copy; {new Date().getFullYear()} ShiftTracker. All rights reserved.
