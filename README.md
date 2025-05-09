@@ -1,12 +1,53 @@
-# React + Vite
+# Employee Shift Tracker Web Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for tracking employee work shifts, breaks, and locations, built with React, Node.js, Express, and MongoDB.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🔐 **Authentication System**: Secure JWT-based login and registration
+- 🕒 **Shift Management**: Start, pause, resume, and end shifts
+- ☕ **Break Tracking**: Support for lunch and short breaks
+- 📍 **Location Tracking**: GPS location recorded at each shift action
+- 📊 **Dashboard**: Real-time visualization of shift status
+- 📅 **Shift History**: View past shifts with full details
+- 📈 **Working Time Stats**: Daily, weekly, and monthly summaries
+- 🌗 **Dark Mode**: Light/Dark theme toggle
+- 📱 **Responsive Design**: Mobile and desktop compatibility
+- 🧑‍💼 **Admin Panel**: Manage employees and shifts
+- ✉️ **Email Notifications**: Sent on shift start and end
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- **Framework**: React
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS v4
+- **Routing**: React Router v6
+- **State Management**: React Context API
+- **HTTP Client**: Axios
+- **Maps**: Leaflet / React-Leaflet
+- **Date Handling**: date-fns
+
+### Backend
+
+- **Runtime**: Node.js
+- **Framework**: Express
+- **Database**: MongoDB + Mongoose
+- **Auth**: JWT (jsonwebtoken), bcryptjs
+- **Email**: Nodemailer + Gmail App Password
+- **Validation**: Custom middleware
+
+---
+
+## ⚙️ Getting Started
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/yourusername/employee-shift-tracker.git
+cd employee-shift-tracker
