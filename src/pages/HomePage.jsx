@@ -59,7 +59,7 @@ const HomePage = () => {
     <div className="min-h-screen flex flex-col bg-gray-100 dark:bg-gray-900">
       <header className="bg-white dark:bg-gray-800 shadow-md">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-2xl font-bold text-primary-600 dark:text-primary-400">
+          <div className="text-2xl font-bold text-primary-600 dark:text-primary-400 dark:text-white">
             ShiftTracker
           </div>
 
@@ -81,10 +81,10 @@ const HomePage = () => {
             </button>
 
             <div className="space-x-2">
-              <Link to="/login" className="btn btn-primary">
+              <Link to="/login" className="btn btn-primary dark:text-white">
                 Login
               </Link>
-              <Link to="/register" className="hidden md:inline-block btn btn-secondary">
+              <Link to="/register" className="hidden md:inline-block btn btn-secondary dark:text-white">
                 Register
               </Link>
             </div>
@@ -96,18 +96,18 @@ const HomePage = () => {
         {/* Hero section */}
         <section className="py-12 md:py-20 bg-gradient-to-r from-primary-500 to-primary-700 dark:from-primary-900 dark:to-primary-700 text-black">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-4xl md:text-5xl font-extrabold mb-6">
+            <h1 className="text-4xl dark:text-white md:text-5xl font-extrabold mb-6">
               Track Your Work Hours Effortlessly
             </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+            <p className="text-xl dark:text-white md:text-2xl mb-8 max-w-3xl mx-auto">
               ShiftTracker helps you easily record your working hours, breaks, and locations.
               Perfect for remote workers, freelancers, and employees on the go.
             </p>
             <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-              <Link to="/register" className="btn bg-white text-black hover:bg-gray-100 focus:ring-black text-lg px-8 py-3">
+              <Link to="/register" className="btn bg-white text-black hover:bg-gray-100 focus:ring-black text-lg px-8 py-3 ">
                 Get Started
               </Link>
-              <Link to="/login" className="btn bg-transparent border-2 border-black text-black hover:bg-black/10 focus:ring-black text-lg px-8 py-3">
+              <Link to="/login" className="btn bg-transparent border-2 border-black dark:text-white hover:bg-black/10 focus:ring-black text-lg px-8 py-3">
                 Sign In
               </Link>
             </div>
@@ -159,7 +159,7 @@ const HomePage = () => {
       <footer className="bg-white dark:bg-gray-800 shadow-md mt-auto">
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="text-xl font-bold text-primary-600 dark:text-primary-400 mb-4 md:mb-0">
+            <div className="text-xl font-bold text-primary-600 dark:text-primary-400 mb-4 md:mb-0 dark:text-white">
               ShiftTracker
             </div>
 
