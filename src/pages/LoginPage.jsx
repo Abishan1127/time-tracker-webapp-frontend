@@ -125,7 +125,7 @@ const LoginPage = () => {
       {/* Footer */}
       <footer className="bg-white dark:bg-gray-800 py-4">
         <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-          &copy; {new Date().getFullYear()} ShiftTracker. All rights reserved.
+          &copy; {new Date().getFullYear()} ShiftTracker, All rights reserved.
         </p>
       </footer>
     </div>
