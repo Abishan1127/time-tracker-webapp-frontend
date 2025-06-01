@@ -137,6 +137,7 @@ export const ShiftProvider = ({ children }) => {
       });
     }
   };
+  
 
   // Start a new shift
   const startShift = async () => {

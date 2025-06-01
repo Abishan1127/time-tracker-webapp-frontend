@@ -167,7 +167,7 @@ const ShiftHistory = () => {
                 disabled={currentPage === totalPages || isLoading}
                 className="btn btn-secondary text-sm disabled:opacity-50"
               >
-                Next
+                Next.
               </button>
             </div>
           )}
